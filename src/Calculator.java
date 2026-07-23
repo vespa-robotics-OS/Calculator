@@ -85,8 +85,10 @@ public class Calculator {
         displayLabel.setText("0");
         displayLabel.setOpaque(true);
         displayLabel.setEditable(false);
+            //so you can't edit the JTextField since it's automatically editable but then it would take too long to link whatever the user inputs with the rest plus then they could type letters and that's just another headache
+
         //displayLabel.setFocusable(false);
-        //so you can't edit the JTextField since it's automatically editable but then it would take too long to link whatever the user inputs with the rest plus then they could type letters and that's just another headache
+            //if dysplayLabel.setFocusable is used, you can't use the scroll wheel anymore
 
 
         historyLabel.setBackground(customTurquoise);
@@ -96,9 +98,10 @@ public class Calculator {
         historyLabel.setText("");
         historyLabel.setOpaque(true);
         historyLabel.setEditable(false);
-        //historyLabel.setFocusable(false);
+            //so you can't edit the JTextField since it's automatically editable but then it would take too long to link whatever the user inputs with the rest plus then they could type letters and that's just another headache
 
-        //so you can't edit the JTextField since it's automatically editable but then it would take too long to link whatever the user inputs with the rest plus then they could type letters and that's just another headache
+        //historyLabel.setFocusable(false);
+            //if dysplayLabel.setFocusable is used, you can't use the scroll wheel anymore
 
         displayPanel.setLayout(new GridLayout(2, 1));
 
